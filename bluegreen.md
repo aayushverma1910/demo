@@ -39,7 +39,10 @@ In a Blue-Green deployment, the current production (Blue) remains live while the
 ![Blue-Green GIF](https://www.encora.com/hs-fs/hubfs/blue-green-deployment.gif?width=540&name=blue-green-deployment.gif)
 ![new](https://7958737.fs1.hubspotusercontent-na1.net/hubfs/7958737/blue-green-deployment.gif?width=540&name=blue-green-deployment.gif)
 
-![](https://octopus.com/devops/video/software-deployments/blue-green-deployment.mp4)
+
+https://github.com/user-attachments/assets/a353e3f1-71cb-4c90-9cdc-0949907d42e5
+
+
 ***
 
 ## Advantages of Blue-Green Deployments
