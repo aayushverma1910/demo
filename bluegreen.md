@@ -37,6 +37,7 @@ The new application version is deployed to the green environment and thoroughly 
 In a Blue-Green deployment, the current production (Blue) remains live while the new version is deployed in a separate environment (Green). Once the green environment passes validation checks, traffic is routed to it, replacing the blue environment. If any critical issues are detected, traffic can be redirected back to blue, ensuring minimal disruption. The process concludes by retiring the previous environment. This method guarantees a seamless user experience and reliable application updates.
 
 ![Blue-Green GIF](https://www.encora.com/hs-fs/hubfs/blue-green-deployment.gif?width=540&name=blue-green-deployment.gif)
+![new](https://7958737.fs1.hubspotusercontent-na1.net/hubfs/7958737/blue-green-deployment.gif?width=540&name=blue-green-deployment.gif)
 
 ***
 
