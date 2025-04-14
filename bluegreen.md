@@ -2,6 +2,22 @@
 
 https://github.com/user-attachments/assets/a353e3f1-71cb-4c90-9cdc-0949907d42e5
 
+
+
+| **Author**   | **Created on** | **Version** | **Last updated by** | **Last edited on** | **Level** | **Reviewer**  | 
+|--------------|----------------|-------------|---------------------|--------------------|-----------|---------------|
+| Aayush Verma|   14-04-2025              | v1          | Aayush Verma   | 14-04-2025   |  Internal Reviewer | Siddharth |
+
+# Table of Contents
+
+1.  **[Add SonarQube Group and User](#step-1-add-sonarqube-group-and-user)**
+2.  **[Configure SonarQube](#step-2-configure-sonarqube)**
+3.  **[Edit the SonarQube script file](#step-3-edit-the-sonarqube-script-file)**
+5.  **[Setup Systemd service](#step-4-setup-systemd-service)**
+6.  **[Modify Kernel System Limits](#step-5-modify-kernel-system-limits)**
+7.  **[Post Installation Setup](#step-6-post-installation-setup)**
+
+
 ## Introduction
 
 Software deployment is the process of delivering new features, updates, and applications to users.  Efficient deployment workflows enable teams to respond rapidly to evolving needs. 
@@ -87,3 +103,18 @@ In a Blue-Green deployment, the current production (Blue) remains live while the
 Software deployment is a cornerstone of reliable, user-centered development. Blue-Green deployments provide an effective strategy for achieving zero-downtime updates and seamless transitions between versions.
 
 ***
+
+##  Contact Information
+
+
+| **Name**       | **Email Address**        |
+|----------------|--------------------------|
+| Aayush Verma   | <aayush.verma@mygurukulam.co> |
+---
+
+
+## **References**
+
+| **Link** | **Description** |
+|------------------------------------------------------|------------------|
+| []()| Steps for SonarQube installation    |
