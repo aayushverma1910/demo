@@ -10,12 +10,15 @@ https://github.com/user-attachments/assets/a353e3f1-71cb-4c90-9cdc-0949907d42e5
 
 # Table of Contents
 
-1.  **[Add SonarQube Group and User](#step-1-add-sonarqube-group-and-user)**
-2.  **[Configure SonarQube](#step-2-configure-sonarqube)**
-3.  **[Edit the SonarQube script file](#step-3-edit-the-sonarqube-script-file)**
-5.  **[Setup Systemd service](#step-4-setup-systemd-service)**
-6.  **[Modify Kernel System Limits](#step-5-modify-kernel-system-limits)**
-7.  **[Post Installation Setup](#step-6-post-installation-setup)**
+1.  **[Introduction](#introduction)**
+2.  **[What is Software Deployment?](#what-is-software-deployment)**
+3.  **[Why is Software Deployment Important?](#why-is-software-deployment-important)**
+5.  **[Blue-Green Deployments](#blue-green-deployments)**
+6.  **[Flow Diagram](#flow-diagram)**
+7.  **[Advantages of Blue-Green Deployments](#advantages-of-blue-green-deployments)**
+8.  **[Best Practices](#best-practices)**
+10.  **[Conclusion](#conclusion)**
+
 
 
 ## Introduction
@@ -117,4 +120,4 @@ Software deployment is a cornerstone of reliable, user-centered development. Blu
 
 | **Link** | **Description** |
 |------------------------------------------------------|------------------|
-| []()| Steps for SonarQube installation    |
+| [Link](https://medium.com/@ayishatabbassum/aws-blue-green-deployment-architecture-design-7641fd043f22)|  Blue-Green Deployments   |
