@@ -1,17 +1,17 @@
 
 ### **1. Pod in “Pending” State**
 
-**Symptom:**
+**Issue Summary:**
 Pods remain in `Pending` status after deployment.
 
-**Root Causes:**
+**Contributing Factors:**
 
 * **Insufficient resources** on nodes (CPU/memory).
 * **NodeSelector**, **Taints/Tolerations**, or **Affinity/Anti-Affinity rules** prevent scheduling.
 * **PVC binding issues** if using persistent volumes.
 * **No suitable node** available for pod scheduling.
 
-**Diagnostic Steps:**
+**Analysis Procedure:**
 
 ```bash
 kubectl describe pod <pod-name>
