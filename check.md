@@ -1,6 +1,3 @@
-Here’s a **detailed explanation of each Kubernetes error**, along with **diagnostic steps and resolution tips**:
-
----
 
 ### **1. Pod in “Pending” State**
 
