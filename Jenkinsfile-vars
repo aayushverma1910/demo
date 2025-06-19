@@ -1,0 +1,39 @@
+@Library('TerraformCD@v0.1') _
+
+pipeline {
+    agent any
+
+    tools {
+        terraform 'terraform' 
+    }
+
+    environment {
+        REPO_URL = 'https://github.com/snaatak-Zero-Downtime-Crew/Tf-Modules.git'
+        BRANCH = 'jenkins-demo'
+        GIT_CREDENTIAL_ID = 'git-cred'
+        TERRAFORM_PATH = "${WORKSPACE}/Env/Dev/Network-Skeleton"
+    }
+
+    parameters {
+        choice(name: 'action', choices: ['apply', 'destroy'], description: 'Choose any one option')
+        string(name: 'tfvarsFile', defaultValue: '', description: 'Terraform .tfvars file (optional)')
+    }
+
+    stages {
+        stage('Run Terraform CD Pipeline') {
+            steps {
+                script {
+                    def message = (params.action == 'apply') ? 'Approval for infrastructure apply' : 'Approval for infrastructure destroy'
+                    def varscdpipeline = new terraform()
+                    varscdpipeline.call(env.REPO_URL, env.BRANCH, env.GIT_CREDENTIAL_ID, env.TERRAFORM_PATH, message, params.action, params.tfvarsFile)
+                }
+            }
+        }
+      
+        stage ('clean workspace'){ 
+            steps {
+                cleanWs()
+            }
+        }
+    }
+}
