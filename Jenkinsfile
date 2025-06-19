@@ -1,4 +1,4 @@
-@Library('TerraformCD@Nikita-SCRUM-347') _
+@Library('TerraformCD@v0.1') _
 
 def cdpipeline = new org.Templates.terraformCD()
 
