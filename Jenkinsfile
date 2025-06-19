@@ -20,6 +20,7 @@ node {
     def message = (params.action == 'apply') ? 'Approval for infrastructure apply' : 'Approval for infrastructure destroy'
 
     cdpipeline.call(repoUrl, branch, gitPassword, terraformPath, message, params.action, params.tfvarsFile)
+    
     stage('Cleanup Workspace') {
         cleanWs()
     }
