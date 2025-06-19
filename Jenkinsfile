@@ -3,10 +3,10 @@
 def cdpipeline = new terra.templates.terraformCD()
 
 node {
-    def repoUrl = 'https://github.com/nikita647/terraform_infra.git'
-    def branch = 'main'
+    def repoUrl = 'https://github.com/snaatak-Zero-Downtime-Crew/Tf-Modules.git'
+    def branch = 'jenkins-demo'
     def gitPassword = 'git-cred'
-    def terraformPath = "${WORKSPACE}"
+    def terraformPath = "${WORKSPACE}/Env/Dev/Network-Skeleton"
     def terraformHome = tool 'terraform'
     env.PATH = "${terraformHome}/bin:${env.PATH}"
 
