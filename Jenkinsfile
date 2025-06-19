@@ -1,6 +1,6 @@
 @Library('TerraformCD@v0.1') _
 
-def cdpipeline = new org.templates.terraformCD()
+def cdpipeline = new terra.templates.terraformCD()
 
 node {
     def repoUrl = 'https://github.com/nikita647/terraform_infra.git'
